@@ -256,3 +256,5 @@ paket-files/
 app/**/*.js
 app/**/*.map
 
+build/node_modules/**
+
