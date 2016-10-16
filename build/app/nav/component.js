@@ -15,7 +15,7 @@ var NavComponent = (function () {
     NavComponent = __decorate([
         core_1.Component({
             selector: "bcm-nav",
-            template: "app/nav/nav.htm"
+            templateUrl: "app/nav/nav.htm"
         }), 
         __metadata('design:paramtypes', [])
     ], NavComponent);
