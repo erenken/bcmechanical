@@ -1,6 +1,9 @@
 {
   "version": "1.0.0",
   "name": "bcmechanical",
+  "engines": {
+    "node": "6.7.0"
+  },
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "lite": "lite-server",
