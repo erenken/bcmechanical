@@ -9,19 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var component_1 = require("./home/component");
-var AppModule = (function () {
-    function AppModule() {
+var NavComponent = (function () {
+    function NavComponent() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [component_1.HomeComponent],
-            bootstrap: [component_1.HomeComponent]
+    NavComponent = __decorate([
+        core_1.Component({
+            selector: "bcm-nav",
+            template: "app/nav/nav.htm"
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], NavComponent);
+    return NavComponent;
 }());
-exports.AppModule = AppModule;
+exports.NavComponent = NavComponent;

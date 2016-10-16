@@ -14,7 +14,7 @@ gulp.task('clean', function (cb) {
 /**
  * Copy all resources that are not TypeScript files into build directory.
  */
-gulp.task("resources", ["server", "app", "assets"], function () {
+gulp.task("resources", ["server", "app", "assets", "images"], function () {
     console.log("Building resources...");
 });
 
@@ -44,6 +44,10 @@ gulp.task("assets", function(){
     return gulp.src(["styles.css"])
         .pipe(gulp.dest("build"));
 });
+gulp.task("images", function(){
+	return gulp.src(["images/**"])
+		.pipe(gulp.dest("build/images"));
+});
 /**
  * Copy all required libraries into build directory.
  */
@@ -63,9 +67,11 @@ gulp.task("libs", function () {
         'rxjs/**/*.js',
 		'client/shim.min.js',
 		'zone.js/dist/zone.js',
-		'reflect-metadata/Reflect.js'
+		'reflect-metadata/Reflect.js',
+		'bootstrap/dist/**/*',
+		'jquery/dist/jquery.min.js'
     ], { cwd: "node_modules/**" }) /* Glob required here. */
-        .pipe(gulp.dest("build/libs"));
+        .pipe(gulp.dest("build/node_modules"));
 });
 /**
  * Build the project.
