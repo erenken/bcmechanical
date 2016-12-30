@@ -1,9 +1,14 @@
 {
   "name": "bcmechanical",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "bcmechanical",
   "main": "server.js",
-  "author": {
-    "name": "Demiurge Software LLC"
-  }
+	"author": {
+		"name": "Demiurge Software LLC"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"gulp": "^3.9.1"
+	}
 }
