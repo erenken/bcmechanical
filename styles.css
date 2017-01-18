@@ -13,4 +13,10 @@
 
 .jumbotron {
   background-color: dodgerblue;
+  font-family: PMingLiU-ExtB;
+  font-weight: bold;
+}
+
+.qualityHeader {
+  font-family: Cookie;
 }
